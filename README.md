@@ -7,9 +7,21 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ](#faq)
+- [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
@@ -37,19 +49,59 @@ The Vet Clinic database, created with PostgreSQL, stores essential information a
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- GETTING STARTED -->
 
-## 👥 Authors <a name="authors"></a>
+## 💻 Getting Started <a name="getting-started"></a>
 
-> Mention all of the collaborators of this project.
 
-👤 **Author1**
+To get a local copy up and running, follow these steps.
 
-- GitHub: [@githubhandle](https://github.com/mahdinoori2000)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mahdinoori23/)
+### Prerequisites
+
+In order to run this project you need:
+
+PostgreSQL installed in your machine.
+
+### Setup
+
+Clone this repository to your desired folder:
+
+
+```sh
+  git clone https://github.com/mahdinoori2000/vet_clinic.git
+  cd vet_clinic
+```
+
+
+### Usage
+
+To run the project, execute the following command:
+
+```sh
+    psql postgres
+```
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 👥 Authors <a name="authors"></a>
+
+👤 **Author1**
+
+- GitHub: [mahdinoori2000](https://github.com/mahdinoori2000)
+- LinkedIn: [mahdinoori23](https://www.linkedin.com/in/mahdinoori23/)
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+
+- [ ] **Add more tables**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
 
