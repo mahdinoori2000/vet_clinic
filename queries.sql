@@ -9,3 +9,9 @@ SELECT name, escape_attempts FROM animals WHERE weight_kg >10.5;
 SELECT * FROM animals WHERE neutered = TRUE;
 SELECT * FROM animals WHERE name != 'Gabumon';
 SELECT * FROM animals WHERE weight_kg >= 10.4 AND weight_kg <= 17.3;
+
+--Vet clinic database: query and update animals table
+-- 1st query
+BEGIN;
+UPDATE animals SET species = 'unspecified';
+ROLLBACK;
