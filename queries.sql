@@ -26,3 +26,13 @@ COMMIT;
 BEGIN;
 DELETE FROM animals;
 ROLLBACK;
+
+-- 4rd query | Using save point to update the weight of animals and multiply them by -1
+BEGIN;
+DELETE FROM animals WHERE date_of_birth > '2022-01-01';
+SAVEPOINT born;
+UPDATE animals SET weight_kg = weight_kg * -1;
+ROLLBACK TO born;
+UPDATE animals SET weight_kg = weight_kg * -1 WHERE weight_kg < 0;
+COMMIT;
+
