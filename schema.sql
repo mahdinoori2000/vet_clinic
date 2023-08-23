@@ -37,3 +37,12 @@ id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
 name VARCHAR(50)
 );
 
+--Modify animals table:
+ALTER TABLE animals
+DROP COLUMN species;
+
+ALTER TABLE animals
+ADD COLUMN species_id integer REFERENCES species(id);
+
+ALTER TABLE animals
+ADD COLUMN owner_id integer REFERENCES owners(id);
