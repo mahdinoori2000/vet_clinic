@@ -46,12 +46,3 @@ ADD COLUMN species_id integer REFERENCES species(id);
 
 ALTER TABLE animals
 ADD COLUMN owner_id integer REFERENCES owners(id);
-
---Insert the following data into the owners table:
-INSERT INTO owners(full_name, age)
-VALUES ('Sam Smith', 34),
-('Jennifer Orwell', 19),
-('Bob', 45),
-('Melody Pond', 77),
-('Dean Winchester', 14),
-('Jodie Whittaker', 38);
