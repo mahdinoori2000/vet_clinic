@@ -19,3 +19,7 @@ CREATE DATABASE vet_clinic;
  neutered BOOLEAN,
  weight_kg DECIMAL(10,2)
  );
+
+ -- Add column called species
+ ALTER TABLE animals ADD COLUMN species VARCHAR(50);
+ 
