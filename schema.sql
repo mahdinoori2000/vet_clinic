@@ -23,3 +23,17 @@ CREATE DATABASE vet_clinic;
  -- Add column called species
  ALTER TABLE animals ADD COLUMN species VARCHAR(50);
  
+ -- Query Multiple Tables
+
+ --Create a table named owners:
+CREATE TABLE owners(
+id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+full_name VARCHAR(50),
+age INT);
+
+ --Create a table named species:
+CREATE TABLE species(
+id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+name VARCHAR(50)
+);
+
