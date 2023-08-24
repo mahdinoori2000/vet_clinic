@@ -35,3 +35,12 @@ VALUES ('Sam Smith', 34),
 -- Insert the following data into the species table:
 INSERT INTO species(name)
 VALUES('Pokemon'), ('Digimon');
+
+-- Modify your inserted animals so it includes the species_id value:
+ UPDATE animals
+SET species_id = species.id
+FROM species WHERE animals.name LIKE '%mon' AND species.name = 'Digimon';
+
+UPDATE animals
+SET species_id = species.id
+FROM species WHERE animals.name NOT LIKE '%mon' AND species.name = 'Pokemon';
